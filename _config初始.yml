@@ -20,43 +20,43 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : 个人博客
+title   : Your Site Title
 description: > # this means to ignore newlines until "Language & timezone"
-  "我的个人博客"
+  Your Site Description
 
 
 ## => Language and Timezone
 ##############################
-lang: zh-Hans # the language of your site, default as "en"
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values  Asia/Shanghai
+lang: # the language of your site, default as "en"
+timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : 邹丹丹
-  url       : assets/images/zdd.jpg
+  name      : Your Name
+  url       :
   avatar    : # path or url of avatar image (square)
-  bio       : 算法工程师 <br> 华科光电本硕 <br> 研究方向：<br> - AIOps、日志异常检测、NFV、地图匹配、MR定位
-  email     : hustdandanzou@foxmail.com
+  bio       : I am an amazing person.
+  email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : meng-qi-dchui-bi # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : dandanzou-hust # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: "dandanzou-hust/myblog-jekyll-TeXt-theme"
-repository_tree: "master"
+repository: user_name/repo_name
+repository_tree: master
 
 
 ## => Paths
@@ -74,7 +74,7 @@ paths:
 excerpt_separator: <!--more-->
 
 ## license
-license: "CC-BY-NC-4.0" # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
 ## TOC
 toc:
@@ -84,14 +84,14 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: true # false (default), true
-mathjax_autoNumber: true # false (default), true
+mathjax: # false (default), true
+mathjax_autoNumber: # false (default), true
 
 ## Mermaid
-mermaid: true # false (default), true
+mermaid: # false (default), true
 
 ## Chart
-chart: true # false (default), true
+chart: # false (default), true
 
 
 ## => Paginate
@@ -108,7 +108,7 @@ sources: # bootcdn (default), unpkg
 ## => Sharing
 ##############################
 sharing:
-  provider: "addtoany" # false (default), "addtoany", "addthis", "custom"
+  provider: false # false (default), "addtoany", "addthis", "custom"
 
   ## AddThis
   addthis:
@@ -127,11 +127,11 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : "89f602fcb4f310bfaa9d" # GitHub Application Client ID
-    clientSecret: "65c5662a8fdfa8024869a481a28a578447801701" # GitHub Application Client Secret
-    repository  : "my-comment-system" # GitHub repo
-    owner       : "dandanzou-hust" # GitHub repo owner
-    admin: "dandanzou-hust" # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    clientID    : # GitHub Application Client ID
+    clientSecret: # GitHub Application Client Secret
+    repository  : # GitHub repo
+    owner       : # GitHub repo owner
+    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine
