@@ -113,7 +113,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: valine # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   # disqus:
@@ -121,22 +121,22 @@ comments:
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
-  gitalk:
-    clientID    : 89f602fcb4f310bfaa9d # GitHub Application Client ID
-    clientSecret: 65c5662a8fdfa8024869a481a28a578447801701 # GitHub Application Client Secret
-    repository  : myblog-jekyll-TeXt-theme # GitHub repo
-    owner       : dandanzou-hust # GitHub repo owner
-    admin:  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-       - dandanzou-hust
+  # gitalk:
+  #   clientID    : 89f602fcb4f310bfaa9d # GitHub Application Client ID
+  #   clientSecret: 65c5662a8fdfa8024869a481a28a578447801701 # GitHub Application Client Secret
+  #   repository  : myblog-jekyll-TeXt-theme # GitHub repo
+  #   owner       : dandanzou-hust # GitHub repo owner
+  #   admin:  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+  #      - dandanzou-hust
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
-  # valine:
-  #   app_id      : # LeanCloud App id
-  #   app_key     : # LeanCloud App key
-  #   placeholder : # Prompt information
-  #   visitor     : # false (default)
-  #   meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+  valine:
+    app_id      : hOLGbEnQlNaKcuDSuAY67E4g-gzGzoHsz # LeanCloud App id
+    app_key     : GxBIEfjEicwDLggjp4LHwTHu # LeanCloud App key
+    # placeholder : # Prompt information
+    # visitor     : # false (default)
+    # meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
 
 
 ## => Pageview
