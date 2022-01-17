@@ -39,4 +39,4 @@ tag: "Map Matching"
 
 # 参考文献
 
-[Lou Y, Zhang C, Zheng Y, et al. Map-matching for low-sampling-rate GPS trajectories[C]](/assert/2021-12-09-Map-Matching_for_Low-Sampling-Rate_GPS_Trajectories/Map-Matching for Low-Sampling-Rate GPS Trajectories.pdf) //Proceedings of the 17th ACM SIGSPATIAL international conference on advances in geographic information systems. 2009: 352-361.
+[Lou Y, Zhang C, Zheng Y, et al. Map-matching for low-sampling-rate GPS trajectories[C]](../../../../assets/literature/Map-Matching for Low-Sampling-Rate GPS Trajectories.pdf) //Proceedings of the 17th ACM SIGSPATIAL international conference on advances in geographic information systems. 2009: 352-361.

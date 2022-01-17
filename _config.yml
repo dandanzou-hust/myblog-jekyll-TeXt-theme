@@ -210,9 +210,9 @@ defaults:
       show_subscribe: false
       # 许可协议
       license: false
-      # 侧边栏
+      # 右侧边导航栏
       aside:
-        toc: false
+        toc: true
       # 开启阅读量统计
       pageview: true
       # 开启评论
