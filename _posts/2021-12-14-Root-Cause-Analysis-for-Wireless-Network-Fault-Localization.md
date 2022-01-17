@@ -1,7 +1,7 @@
 ---
 title:  "【竞赛】Root Cause Analysis for Wireless Network Fault Localization"
 date:   2021-12-15 12:00:00 +0800
-
+key: Root-Cause-Analysis-for-Wireless-Network-Fault-Localization
 categories: 竞赛
 tag: "RCA"
 
@@ -40,5 +40,4 @@ toc: true # 右侧导航栏
 - 因果推理
 DoWhy+EconML 可以用于决策因果关系，推理出包含根因概率的有向无环图。
 - 用时序异常检测算法实现
-
 

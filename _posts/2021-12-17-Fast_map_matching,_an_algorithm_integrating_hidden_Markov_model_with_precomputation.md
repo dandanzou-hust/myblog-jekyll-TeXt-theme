@@ -2,7 +2,7 @@
 title:  "【文献阅读】Fast map matching, an algorithm integrating hidden Markov
 model with precomputation"
 date:   2021-12-17 12:00:00 +0800
-
+key: Fast_map_matching_an_algorithm_integrating_hidden_Markov_model_with_precomputation
 categories: 文献阅读
 tag: "Map Matching"
 ---
