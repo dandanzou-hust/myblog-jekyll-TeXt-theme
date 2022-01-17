@@ -2,13 +2,19 @@
 title:  "【文献阅读】Map-Matching for Low-Sampling-Rate GPS Trajectories（低采样率下GPS轨迹的地图匹配）"
 date:   2021-12-09 11:30:00 +0800
 
+key: A0001
+
+layout: article
+# show_author_profile: true
+modify_date: 
+
 categories: 文献阅读
 tag: "Map Matching"
 
 # 左侧菜单栏
 # sidebar:
-#  nav: "docs"
-toc: true # 右侧导航栏
+#  nav: "docs-en"
+
 # permalink: /technology/【技术分享】常用命令合集
 # read_time: true
 # comments: true
@@ -43,17 +49,10 @@ toc: true # 右侧导航栏
 
 **观察1：真正的路径往往是直接的，而不是迂回的。**
 
-
-
-
-
 考虑图1中显示的出租车GPS轨迹。出租车从北向南行驶。大多数地图匹配算法将匹配圆形GPS观测点Pb到最近的路段，即垂直的路段。然而从它前后的点Pa和Pc中，我们认为Pb应该是
-
-
 
 待更新。。。。。。
 
 # 参考文献
 
 [Lou Y, Zhang C, Zheng Y, et al. Map-matching for low-sampling-rate GPS trajectories[C]](/assert/2021-12-09-Map-Matching_for_Low-Sampling-Rate_GPS_Trajectories/Map-Matching for Low-Sampling-Rate GPS Trajectories.pdf) //Proceedings of the 17th ACM SIGSPATIAL international conference on advances in geographic information systems. 2009: 352-361.
-

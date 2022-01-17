@@ -11,20 +11,15 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
-
-
-
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : 个人博客
-description: > # this means to ignore newlines until "Language & timezone"
-  "我的个人博客"
-
-
+title   : 邹丹丹的个人博客
+description:  我的个人博客 # this means to ignore newlines until "Language & timezone"
+  
 ## => Language and Timezone
 ##############################
 lang: zh-Hans # the language of your site, default as "en"
@@ -34,11 +29,11 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ## => Author and Social
 ##############################
 author:
-  type      : # "person" (default), "organization"
+  type      : person # "person" (default), "organization"
   name      : 邹丹丹
-  url       : assets/images/zdd.jpg
-  avatar    : # path or url of avatar image (square)
-  bio       : 算法工程师 <br> 华科光电本硕 <br> 研究方向：<br> - AIOps、日志异常检测、NFV、地图匹配、MR定位
+  url       : /author/zoudd.html
+  avatar    : /assets/images/zdd.png # path or url of avatar image (square)
+  bio       : 算法工程师 <br> 13051218520 | hustdandanzou@foxmail.com <br> 亚信科技（中国）有限公司 | PRD TI AI Lab <br> 北京市海淀区西北旺东路10号亚信大厦 100193 <br> 研究方向 <br>     - AIOps、日志异常检测、NFV <br>    - Map、地图匹配、MR定位 <br>
   email     : hustdandanzou@foxmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -108,7 +103,7 @@ sources: # bootcdn (default), unpkg
 ## => Sharing
 ##############################
 sharing:
-  provider: "addtoany" # false (default), "addtoany", "addthis", "custom"
+  provider: false # false (default), "addtoany", "addthis", "custom"
 
   ## AddThis
   addthis:
@@ -118,42 +113,42 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
-  disqus:
-    shortname: # the Disqus shortname for the site
+  # disqus:
+  #   shortname: # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : "89f602fcb4f310bfaa9d" # GitHub Application Client ID
-    clientSecret: "65c5662a8fdfa8024869a481a28a578447801701" # GitHub Application Client Secret
-    repository  : "my-comment-system" # GitHub repo
-    owner       : "dandanzou-hust" # GitHub repo owner
-    admin: "dandanzou-hust" # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+    clientID    : 89f602fcb4f310bfaa9d # GitHub Application Client ID
+    clientSecret: 65c5662a8fdfa8024869a481a28a578447801701 # GitHub Application Client Secret
+    repository  : my-comment-system # GitHub repo
+    owner       : dandanzou-hust # GitHub repo owner
+    admin:  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+       - dandanzou-hust
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
-  valine:
-    app_id      : # LeanCloud App id
-    app_key     : # LeanCloud App key
-    placeholder : # Prompt information
-    visitor     : # false (default)
-    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+  # valine:
+  #   app_id      : # LeanCloud App id
+  #   app_key     : # LeanCloud App key
+  #   placeholder : # Prompt information
+  #   visitor     : # false (default)
+  #   meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
 
 
 ## => Pageview
 ##############################
 pageview:
-  provider: false # false (default), "leancloud", "custom"
+  provider: leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : hOLGbEnQlNaKcuDSuAY67E4g-gzGzoHsz # LeanCloud App id
+    app_key   : GxBIEfjEicwDLggjp4LHwTHu # LeanCloud App key
+    app_class : comment_system # LeanCloud App class
 
 
 ## => Search
@@ -207,13 +202,15 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
+      sharing: false
       license: true
       aside:
         toc: true
       show_edit_on_github: true
+      show_author_profile: true
       show_subscribe: true
       pageview: true
+      comment: true
 
 
 ## => Plugins
