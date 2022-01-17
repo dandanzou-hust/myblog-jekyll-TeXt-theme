@@ -1,25 +1,9 @@
 ---
 title:  "【文献阅读】Map-Matching for Low-Sampling-Rate GPS Trajectories（低采样率下GPS轨迹的地图匹配）"
 date:   2021-12-09 11:30:00 +0800
-
-key: A0001
-
-layout: article
-# show_author_profile: true
-modify_date: 
-
+# key: A0001
 categories: 文献阅读
 tag: "Map Matching"
-
-# 左侧菜单栏
-# sidebar:
-#  nav: "docs-en"
-
-# permalink: /technology/【技术分享】常用命令合集
-# read_time: true
-# comments: true
-# share: false
-# related: true
 ---
 # Abstract
 

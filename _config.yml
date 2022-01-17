@@ -202,16 +202,31 @@ defaults:
       type: posts
     values:
       layout: article
+      # 是否开启分享
       sharing: false
-      license: false
-      aside:
-        toc: true
-      show_edit_on_github: true
+      # 作者信息卡片
       show_author_profile: true
-      show_subscribe: true
+      # 是否显示订阅
+      show_subscribe: false
+      # 许可协议
+      license: false
+      # 侧边栏
+      aside:
+        toc: false
+      # 开启阅读量统计
       pageview: true
+      # 开启评论
       comment: true
-
+      # 开启 Mathjax 公式支持
+      mathjax: true
+      # Mathjax 公式自动编号
+      mathjax_autoNumber: true
+      # Mermaid 流程图支持
+      mermaid: true
+      # Chart 图表支持
+      chart: true
+      # 封面图片
+      cover: /assets/images/Home-page-picture.jpg
 
 ## => Plugins
 ##############################
