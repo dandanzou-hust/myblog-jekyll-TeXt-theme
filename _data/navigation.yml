@@ -63,6 +63,20 @@ header:
       # @end locale config
     url: /mylife.html
 
+    - titles:
+      # @start locale config
+      en      : &EN    photography
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  摄影
+      zh      : *ZH_HANS  
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      # @end locale config
+    url: /photography.html
+
 
 docs-en:
   - title:      Start
