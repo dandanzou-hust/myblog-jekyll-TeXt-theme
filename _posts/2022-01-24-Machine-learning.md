@@ -13,10 +13,8 @@ tag: "machine learning"
 ## 1.1 课程介绍
 
 机器学习工作流程：
-$$
-问题表述 \rightarrow 收集与处理数据 \rightarrow 训练与调优模型 \rightarrow 应用模型 \\
- \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \uparrow \ \ \leftarrow \  \ \ \ \ \ \ \ 监测 \ \ \ \ \ \ \ \  \leftarrow \ \ \ \ \ \ \ \ \downarrow
-$$
+
+![image-20220125103355933](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20220125103355933.png)
 
 挑战：
 
@@ -34,13 +32,8 @@ $$
 - 软件开发工程师 (SDE)：开发、维护代码，模型训练，管理资源，模型部署。
 
 技能提升：
-$$
-软件开发工程师 \ \ \ \ \ \ 领域专家 \\
-\ \ \ \ \ \ \  \downarrow \ \ \ \ \ \ \ \ \ \ \ \ \downarrow \\
-\ \ \ \ \ \ \ 数据科学家 \\
-\ \ \ \ \ \ \ \downarrow \\
-\ \ \ \ \ \ \ 机器学习专家
-$$
+
+![image-20220125103429313](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20220125103429313.png)
 我理解的路线，先从开发出发，逐渐熟悉领域，转变为数据科学家。
 
 ## 1.2 数据获取
