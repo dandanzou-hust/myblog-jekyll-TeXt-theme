@@ -4,7 +4,7 @@ title:  "【机器学习】斯坦福21秋季：实用机器学习（李沐版本
 date:   2022-01-20 12:00:00 +0800
 key: machine-learning
 categories: 机器学习
-tag: "machine learning
+tag: "machine learning"
 ---
 本课程是斯坦福大学2021年秋季新开的课程：实用机器学习。
 
