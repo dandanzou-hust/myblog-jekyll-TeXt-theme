@@ -1,6 +1,6 @@
 ---
 title:  "【文献阅读】Estimation and Inference of Heterogeneous Treatment Effects using Random Forests"
-date:   2021-2-14 12:00:00 +0800
+date:   2022-2-14 12:00:00 +0800
 key: Estimation-and-Inference-of-Heterogeneous-Treatment-Effects-using-Random-Forests
 categories: 文献阅读
 tag: "因果推理"
