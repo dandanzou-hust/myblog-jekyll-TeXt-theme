@@ -1,5 +1,5 @@
 ---
-title:  "【文献阅读】Map-Matching for Low-Sampling-Rate GPS Trajectories（低采样率下GPS轨迹的地图匹配）"
+title:  "待更新【文献阅读】Map-Matching for Low-Sampling-Rate GPS Trajectories（低采样率下GPS轨迹的地图匹配）"
 date:   2021-12-09 11:30:00 +0800
 key: Map-Matching_for_Low-Sampling-Rate_GPS_Trajectories
 categories: 文献阅读
