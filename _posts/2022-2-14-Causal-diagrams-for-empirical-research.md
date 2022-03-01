@@ -15,7 +15,7 @@ tag: "因果推理"
 
 推荐另一篇丁鹏教授早期对该论文理解的中文博客：
 
-[因果推断简介之五：因果图 (Causal Diagram) | 统计之都 (cosx.org)](https://cosx.org/2012/10/causality5-causal-diagram)
+[因果推断简介之五：因果图 (Causal Diagram) \| 统计之都 (cosx.org)](https://cosx.org/2012/10/causality5-causal-diagram)
 
 # 摘要
 
