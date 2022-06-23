@@ -1,5 +1,5 @@
- <center>
-     <h1>XXX</h1>
+<center>
+     <h1>邹丹丹</h1>
      <div>
          <span>
              <img src="assets/phone-solid.svg" width="18px">
@@ -23,11 +23,11 @@
      </div>
  </center>
 
- ## <img src="assets/info-circle-solid.svg" width="30px"> 个人信息 
+## <img src="assets/info-circle-solid.svg" width="30px"> 个人信息
 
- - 邹丹丹，男，1994 年出生
- - 求职意向：算法工程师
- - 工作经验：2 年
+- 邹丹丹，男，1994 年出生
+- 求职意向：算法工程师
+- 工作经验：2 年
 
 ## <img src="assets/graduation-cap-solid.svg" width="30px"> 教育经历
 
