@@ -1,6 +1,6 @@
 ---
 title:  "【技术分享】GNN综述"
-date:   2022-4-20 12:00:00 +0800
+date:   2022-6-23 12:00:00 +0800
 key: Graph-Neural-Networks
 categories: 文献阅读
 tag: "GNN"
@@ -77,7 +77,7 @@ Zhou J, Cui G, Hu S, et al. Graph neural networks: A review of methods and appli
 
 - 池模块：当我们需要高级子图或图的表示时，需要池模块来从节点提取信息。
 
-![](assets/post-images/2022-06-23-17-33-46-image.png)
+![](/assets/post-images/2022-06-23-17-33-46-image.png)
 
 ## 计算模块
 
@@ -99,7 +99,7 @@ GNN挑战: 异质图、label缺乏、可测量性
 
 ## 频域解释：魏哲巍 中国人民大学
 
-![](assets/post-images/2022-06-23-15-43-40-image.png)
+![](D:/work/PersonalWeb/myblog-jekyll-TeXt-theme/assets/post-images/2022-06-23-15-43-40-image.png)
 
 图卷积神经网络作为了一个滤波器，对当前节点的邻居节点信息进行过滤。
 
