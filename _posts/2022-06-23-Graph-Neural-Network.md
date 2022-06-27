@@ -77,7 +77,7 @@ Zhou J, Cui G, Hu S, et al. Graph neural networks: A review of methods and appli
 
 - 池模块：当我们需要高级子图或图的表示时，需要池模块来从节点提取信息。
 
-![](/assets/post-images/2022-06-23-17-33-46-image.png)
+<img src="https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/2022-06-23-17-42-17-image.png"/>
 
 ## 计算模块
 
@@ -108,5 +108,3 @@ GNN挑战: 异质图、label缺乏、可测量性
 ## 基于聚类的图对比学习研究：张静 中国人民大学
 
 ## CogDL： 清华
-
-![](https://raw.githubusercontent.com/dandanzou-hust/my-picture-bed/main/2022/06/23-18-12-55-2022-06-23-17-42-17-image.png)
