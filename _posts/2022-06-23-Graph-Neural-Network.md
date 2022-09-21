@@ -6,7 +6,7 @@ categories: 文献阅读
 tag: "GNN"
 ---
 
-# GNN综述
+# 2020年GNN综述
 
 Zhou J, Cui G, Hu S, et al. Graph neural networks: A review of methods and applications[J]. AI Open, 2020, 1: 57-81.
 
@@ -108,3 +108,29 @@ GNN挑战: 异质图、label缺乏、可测量性
 ## 基于聚类的图对比学习研究：张静 中国人民大学
 
 ## CogDL： 清华
+
+# GNN+通信网络综述
+
+Jiang W. Graph-based deep learning for communication networks: A survey[J]. Computer Communications, 2021.
+
+## Abstract
+
+通信网络是当代社会的重要基础设施。基于图的深度学习在通信网络中的一系列问题上取得了最先进的性能。
+
+综述内容：在不同类型的通信网络（如无线网络、有线网络和软件设计网络）的各种问题中使用基于不同图的深度学习模型（如图卷积网络和图注意力网络）的快速增长的研究主体。
+
+<img src="https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220705101533.png"/>
+
+## Graph-based Deep Learning Introduction
+
+<img src="https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220705105240.png"/>
+
+## 有线网络中routing
+
+[85] F. Geyer, G. Carle, Learning and generating distributed routing protocols usinggraph-based deep learning, in: Proceedings of the 2018 Workshop on Big DataAnalytics and Machine Learning for Data Communication Networks, 2018, pp.40–45.
+
+分布式routing的方法，Graph-Query Neural Network
+
+[87] S. Xiao, H. Mao, B. Wu, W. Liu, F. Li, Neural packet routing, in: Proceedingsof the Workshop on Network Meets AI & ML, 2020, pp. 28–34.
+
+华为做的，在用NN做负载均衡的基础上，加了优化的最短路径路由算法。

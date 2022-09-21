@@ -1,10 +1,19 @@
 ---
-title:  "待更新【文献阅读】Map-Matching for Low-Sampling-Rate GPS Trajectories（低采样率下GPS轨迹的地图匹配）"
+title:  "【文献阅读】Map-Matching for Low-Sampling-Rate GPS Trajectories（低采样率下GPS轨迹的地图匹配）"
 date:   2021-12-09 11:30:00 +0800
 key: Map-Matching_for_Low-Sampling-Rate_GPS_Trajectories
 categories: 文献阅读
 tag: "Map Matching"
 ---
+# 引言
+
+笔者近期需要寻找地图匹配落地的相关算法，用于道路轨迹拟合。近十年提出的算法中，基于隐马尔可夫（HMM）模型的算法是主流，其次是基于最大权重的模型。我调研选用了开源的三种算法：LMM、FMM、STMM。
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220722114620.png)
+
+这篇论文提出了基于最大权重的地图匹配算法：STMM。以所有采样点的候选点为顶点集，相邻采样点的候选点间的联系为边集构成有向无环图，搜索权重最大的轨迹序列。
+
+这里只是翻译了一下论文中的STMM创新点，并未对技术细节详细分析。
+
 # Abstract
 
 地图匹配是将观测到的用户位置序列与数字地图上的道路网络对齐的过程。它是许多应用程序的基本预处理步骤，如移动对象管理、交通流分析和行驶方向。在实践中，存在大量的低采样率（例如，每2-5分钟一个点）GPS轨迹。不幸的是，**当前大多数地图匹配方法仅处理高采样率（通常每10-30秒一个点）GPS数据，并且随着数据不确定性的增加，对低采样率点的效果会降低** 。
@@ -33,10 +42,22 @@ tag: "Map Matching"
 
 **观察1：真正的路径往往是直接的，而不是迂回的。**
 
-考虑图1中显示的出租车GPS轨迹。出租车从北向南行驶。大多数地图匹配算法将匹配圆形GPS观测点Pb到最近的路段，即垂直的路段。然而从它前后的点Pa和Pc中，我们认为Pb应该是
+考虑图1中显示的出租车GPS轨迹。出租车从北向南行驶。大多数地图匹配算法将匹配圆形GPS观测点Pb到最近的路段，即垂直的路段。然而从它前后的点Pa和Pc中，我们认为Pb应与水平路段相匹配，因为该出租车不太可能先绕到水平道路，然后再返回垂直道路。这意味着可以将道路网络的拓扑信息与位置上下文相结合，以提供更好的匹配结果。
 
-待更新。。。。。。
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220722113419.png)
+
+**观察2：真实路径往往遵循道路的速度限制。**
+
+考虑图2中显示的另一个滑行GPS轨迹。如果没有速度信息，几乎不可能判断这两个点是属于公路还是服务道路。
+
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220722113728.png)
+
+基于此，本文做出以下贡献：
+- 我们提出了一种新的全局匹配算法，称为STmatching，用于低采样率GPS轨迹。它结合了以前方法未探索的空间和时间特征。
+- 我们在合成数据集和真实数据集上进行了大量实验。真实的数据集是从物理世界收集的，并由真实的人标记。因此，与大多数现有工作中使用的合成数据相比，它可以更好地评估地图匹配算法的性能。
+- 我们的算法在运行时间和匹配精度方面进行了评估。结果表明，在低采样率轨迹的匹配精度方面，我们的ST匹配算法明显优于增量算法。同时，与基于平均FRéchet距离的全局算法相比，ST匹配也提高了准确性和运行时间。
 
 # 参考文献
 
-[Lou Y, Zhang C, Zheng Y, et al. Map-matching for low-sampling-rate GPS trajectories[C]](../../../../assets/literature/Map-Matching for Low-Sampling-Rate GPS Trajectories.pdf) //Proceedings of the 17th ACM SIGSPATIAL international conference on advances in geographic information systems. 2009: 352-361.
+[1] 于娟,杨琼,鲁剑锋,韩建民,彭浩.高级地图匹配算法：研究现状和趋势[J].电子学报,2021,49(09):1818-1829.
+[2] Lou Y, Zhang C, Zheng Y, et al. Map-matching for low-sampling-rate GPS trajectories[C] //Proceedings of the 17th ACM SIGSPATIAL international conference on advances in geographic information systems. 2009: 352-361.

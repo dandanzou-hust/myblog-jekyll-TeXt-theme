@@ -88,7 +88,7 @@ $$
 
 与大多数以前的工作类似，FMM采用GPS轨迹集TR和道路网G作为输入。对于每条轨迹，它导出一条路径，该路径存储为车辆穿过的一系列边及其几何体。图1显示了FMM的整个过程，包括预计算和MM两个阶段。
 
-![image-20211220111258678](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211220111258678.png)
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211220111258678.png)
 
 ### 4.1. Precomputing stage
 
@@ -100,12 +100,11 @@ $$
 
 其中next n和next e分别表示no之后访问的下一个节点和下一条边。nd之前访问的上一个节点存储在prev n中，dist是SP距离。图2给出了存储在UBODT中的这些信息的图示。
 
-![image-20211220112827018](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211220112827018.png)
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211220112827018.png)
 
 UBODT是通过迭代G中的每个节点s并调用经典的单源Dijkstra算法来构造的，该算法从s开始，上界为Δ，如算法1所示。在每次迭代中，生成最短路径树，如算法1中的第4-10行所示。
 
-![image-20211220113158193](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211220113158193.png)
-
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211220113158193.png)
 构造后的UBODT存储为一个哈希表，其复合键为$$(n_o,n_d)$$，实现为一个线性链接结构。该结构由两个参数配置：
 
 -the number of buckets **H**（通常选择为素数）
@@ -162,7 +161,7 @@ $$
 TRCS(tr)=<CS(p_1 ),CS(p_2),…,CS(p_N)>
 $$
 
-![image-20211223182127115](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182127115.png)
+![image-20211223182127115](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182127115.png)
 
 #### 4.2.2 最佳路径推理（OPI)
 
@@ -170,37 +169,37 @@ $$
 
 可以直接从UBODT检索图的节点之间的SP距离。然而，计算从Cn到Cn+1的SP距离需要额外的处理，这实际上是图的边上的点之间的距离，而不是节点之间的距离。假设车辆始终沿边缘方向移动，图4显示了Pn和Pn+1的所有可能移动，如下所示：
 
-![image-20211223182156634](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182156634.png)
+![image-20211223182156634](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182156634.png)
 
 根据观察结果，从Cn到Cn+1的SP距离计算如下(详细推导请参见原文)：
 
-![image-20211223182207002](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182207002.png)
+![image-20211223182207002](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182207002.png)
 
 #### 4.2.3 最佳路径推理（OPI)
 
 在文献中，MM的HMM定义主要有三部分不同：转移概率、发射概率和要最大化或最小化的目标函数。转移概率的一个常用定义是欧几里德距离除以SP距离，这在GPS数据密集和搜索半径较大的情况下可能会出现问题。
 
-![image-20211223182315783](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182315783.png)
+![image-20211223182315783](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182315783.png)
 
 在FMM中，优化后的转换概率定义为：
 
-![image-20211223182300657](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182300657.png)
+![image-20211223182300657](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182300657.png)
 
 发射概率，采用Lou等人（2009）使用的相同定义，假设GPS点在车辆真实位置周围遵循零平均高斯分布。形式上，候选Cn的发射概率定义如下：
 
-![image-20211223182333394](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182333394.png)
+![image-20211223182333394](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182333394.png)
 
-![image-20211223182337849](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182337849.png)
+![image-20211223182337849](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182337849.png)
 
 采用Viterbi算法，可以有效地推断出最优路径O路径为具有最大分数的路径，该路径存储为tr中每个点匹配的N个候选序列，表示为
 
-![image-20211223182343252](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182343252.png)
+![image-20211223182343252](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182343252.png)
 
 #### 4.2.4 完整路径构造（CPC）和几何构造（GC）
 
 一旦获得O路径，最后两个步骤是CPC和GC。在CPC步骤中，通过将连接O路径中连续候选的SP连接在一起，构建完整路径C路径，这是tr穿过的一系列边，表示为
 
-![image-20211223182515741](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182515741.png)
+![image-20211223182515741](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182515741.png)
 
 路径的查询也在UBODT中执行。
 
@@ -224,15 +223,15 @@ $$
 
 当使用HMM模型匹配真实世界的GPS数据时 ，结果中经常观察到车辆在对应于单个双向路段的两条定向边上来回移动，这称为反向移动。
 
-![image-20211223182559452](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182559452.png)
+![image-20211223182559452](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182559452.png)
 
 虽然可能会发生车辆在路段上实际来回移动的情况，但更常见的情况是存在双向路段且GPS观测误差较大。因此，包含反向移动的路径可以在OPI步骤中返回，因为它的分数高于正确的路径。
 
-![image-20211223182610259](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182610259.png)
+![image-20211223182610259](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182610259.png)
 
 SP距离添加反向移动的惩罚项：
 
-![image-20211223182621483](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182621483.png)
+![image-20211223182621483](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182621483.png)
 
 ## 5. 示例
 
@@ -248,24 +247,24 @@ GPS数据稀疏，大多数时间间隔在1分钟到4分钟之间，大多数距
 
 （3） 其几何图形超出了道路网络的边界。最后保留644695次行程（95.7%），包含6812720点。根据经验GPS误差设置为100米。
 
-![image-20211223182657802](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182657802.png)
+![image-20211223182657802](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182657802.png)
 
-![image-20211223182705637](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182705637.png)
+![image-20211223182705637](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182705637.png)
 
-![image-20211223182712203](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182712203.png)
+![image-20211223182712203](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182712203.png)
 
-![image-20211223182715974](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182715974.png)
+![image-20211223182715974](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182715974.png)
 
-![image-20211223182721141](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182721141.png)
+![image-20211223182721141](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182721141.png)
 
 ## 6. 准确率和结果展示
 
-![image-20211223182741765](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182741765.png)
+![image-20211223182741765](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182741765.png)
 
-![image-20211223182747771](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182747771.png)
+![image-20211223182747771](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182747771.png)
 
-![image-20211223182751852](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20211223182751852.png)
+![image-20211223182751852](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20211223182751852.png)
 
 ## 参考文献
 
-[Fast map matching, an algorithm integrating hidden Markov model with precomputation.pdf](../../../../assets/literature/Fast map matching, an algorithm integrating hidden Markov model with precomputation.pdf)
+Fast map matching, an algorithm integrating hidden Markov model with precomputation

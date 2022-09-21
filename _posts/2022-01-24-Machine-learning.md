@@ -1,11 +1,14 @@
 ---
 # 【文献阅读】【技术分享】【竞赛】
+
 title:  "【机器学习】斯坦福21秋季：实用机器学习（李沐版本）"
 date:   2022-01-20 12:00:00 +0800
 key: machine-learning
 categories: 机器学习
 tag: "machine learning"
+
 ---
+
 ## 前言
 
 李沐B站链接：[跟李沐学AI的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/1567748478/channel/collectiondetail?sid=28144)
@@ -16,7 +19,7 @@ tag: "machine learning"
 
 机器学习工作流程：
 
-![image-20220125103355933](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20220125103355933.png)
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20220125103355933.png)
 
 挑战：
 
@@ -35,18 +38,18 @@ tag: "machine learning"
 
 技能提升：
 
-![image-20220125103429313](https://gitee.com/ddzou/my-picture-bed-on-gitee/raw/master//markdown-picture//image-20220125103429313.png)
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/image-20220125103429313.png)
 
 我理解的路线，先从开发出发，逐渐熟悉领域，转变为数据科学家。
 
 ## 1.2 数据获取
 
 - 找数据
-
-  -  常用数据集：MNIST、ImageNet、AudioSet、Kinetics、KITTI、Amazon Review、SQuAD、LibriSpeech
-
+  
+  - 常用数据集：MNIST、ImageNet、AudioSet、Kinetics、KITTI、Amazon Review、SQuAD、LibriSpeech
+  
   - 常用途径：
-
+    
     - Paperswithcodes Datasets: 提供了学术论文在数据集上的得分
     - Kaggle Datasets: 
     - Google Dataset search
@@ -54,17 +57,17 @@ tag: "machine learning"
     - 不同竞赛的数据集
     - Open Data on AWS:
     - Data lakes: 公司自己放数据的地方。
-
+    
     学术数据集：干净、难度适中；选择受限、太简单、规模小；
-
+    
     竞赛数据集：接近机器学习应用；还是简单、仅关注火热的话题；
-
+    
     原始数据集：灵活；需要大量精力预处理；
-
+  
   - 数据融合：多模态（不同来源的数据）融合
 
 - 生成数据
-
+  
   - GAN
   - 图像翻转、文本增强
 
@@ -82,17 +85,17 @@ tag: "machine learning"
 
 半监督学习
 
-​	自学习：
+​    自学习：
 
-​		有标签数据 -> 训练模型 -> 预测无标签的数据  -> 数据合并   循环处理             
+​        有标签数据 -> 训练模型 -> 预测无标签的数据  -> 数据合并   循环处理             
 
 主动学习
 
-​	模型筛选出难以确定的图片、人工标注
+​    模型筛选出难以确定的图片、人工标注
 
 弱监督学习
 
-​	设定多个规则，符合一定规则且数量超过阈值标为正。
+​    设定多个规则，符合一定规则且数量超过阈值标为正。
 
 ## 2.1 探索性数据分析
 
@@ -149,8 +152,6 @@ Image/Video：
 
 - 与训练好的深度学习模型，倒数第二层的输出作为图片抽取出的特征，放入如softmax层进行分类。
 
-
-
 **表：特征抽取**
 
 **文本、视频、图片、语音：深度学习抽取**
@@ -162,9 +163,11 @@ Image/Video：
 1. 开始机器学习
 
 2. 数据足够吗？
+   
    1. 不够，找数据或生成数据
 
 3. 提升数据、标签、模型
+   
    1. label：半监督学习，自己标众包，启发式的规则抽取出标签。
    2. data：探索性数据分析，数据清洗，数据变换，特征工程。
    3. 更好的模型
@@ -174,8 +177,6 @@ Image/Video：
 - 标号质量和数据量
 - 数据质量
 - 安全
-
-
 
 ## 3.1 机器学习总览
 
@@ -238,17 +239,54 @@ GBDT
 
 Softmax 回归——多分类
 
-Mini-batch SGD
+## 3.4 Mini-batch SGD
 
+几乎是唯一求解方法（除了决策树）。
 
+模型参数：$W$
 
+核心： $W_{t+1}=W_t - 学习率*梯度$
 
+## 3.5 MLP多层感知机
 
+全连接层
 
+## 3.6 CNN
 
+卷积核，处理二维
 
+## 3.7 RNN
 
+时序，循环
 
+## 4.1 评估指标
 
+损失函数、耗时等
 
+分类任务：accuracy、precision、recall、F1、AUC、ROC
 
+Latency延时、ASN页面广告数、CTR点击率、ACP平均价格
+
+## 4.2 过、欠拟合
+
+训练误差：训练集上的误差
+
+泛化误差：新数据集的误差
+
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220715162629.png)
+
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220715163155.png)
+
+![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220715163655.png) 
+
+## 4.3 模型验证
+
+train  ：训练
+
+val  ：可多次使用，但是用于测试，KFold
+
+test：真正的仅使用一次，费数据。
+
+## 5.1 方差、偏差
+
+## 5.2 Bagging
