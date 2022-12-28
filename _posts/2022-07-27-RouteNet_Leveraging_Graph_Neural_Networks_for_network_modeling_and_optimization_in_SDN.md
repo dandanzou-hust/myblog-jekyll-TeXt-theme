@@ -1,11 +1,10 @@
 ---
-title:  "【文献阅读】"
+title:  "【文献阅读】RouteNet"
 date:   2022-7-27 12:00:00 +0800
 key: RouteNet_Leveraging_Graph_Neural_Networks_for_network_modeling_and_optimization_in_SDN
 categories: 文献阅读
 tag: "GNN"
 ---
-
 # 引言
 
 预发表版本：Unveiling the potential of Graph Neural Networks for network modeling and optimization in SDN
@@ -45,17 +44,11 @@ RouteNet: Leveraging Graph Neural Networks for network modeling and optimization
 我们总结了与前一篇论文相比，本文的主要贡献和最新技术：
 
 - 受广义线性模型启发的概率建模
-
 - 适应每个源/目标丢包率的预测
-
 - 剩余连接以促进培训（如ResNet[15]）
-
 - 计算成本提高（10 更快）
-
 - 其他输入功能（支持任意链路容量）
-
 - 结合丢包要求的新网络优化用例。
-
 - 更多样化和更大的网络拓扑（具有14、17、24和50个节点）
 
 # 基于SDN的建模和优化场景
@@ -64,9 +57,9 @@ RouteNet: Leveraging Graph Neural Networks for network modeling and optimization
 该策略与基于意图的网络相一致，可由声明性语言（如NEMO[2]）定义，并最终转化为（多目标）网络优化问题。在这一点上，准确的网络模型可以在优化过程中发挥关键作用，通过利用它来运行优化算法（例如爬山），迭代探索候选解决方案的性能，以找到最佳配置。我们有意将培训阶段排除在该架构的范围之外。
 
 > Control plane 可以做一些假设性质的场景分析，而不需要对实际场景进行修改。
-> 
+>
 > 需要看一下KDN
-> 
+>
 > 简单的事写的高大上，说话的艺术^_^
 
 ![](https://zdd-1300938198.cos.ap-beijing.myqcloud.com//my-picture-bed/20220729114838.png)
@@ -185,7 +178,7 @@ RouteNet的架构能够处理等式（1）和（2）中描述的循环依赖，�
 最后，我们**介绍了一些优化用例**，其中我们将RouteNet的性能预测用于不同的网络优化目的。特别是，我们基于延迟、抖动和丢包要求执行QoS感知路由优化，并使用RouteNet在网络规划场景中找到最佳链路位置。
 
 > 总结：
-> 
+>
 > 链路状态向量+路径状态向量的构造方式，感觉还是有用的。后续可以尝试实现一下。
 
 # 参考文献

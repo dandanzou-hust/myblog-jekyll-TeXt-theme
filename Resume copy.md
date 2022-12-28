@@ -9,17 +9,27 @@
          <span>
              <img src="assets/envelope-solid.svg" width="18px">
              dandan-zou@qq.com
-         </span>     
-    </div>
-</center>
+         </span>
+         <!-- ·
+         <span>
+             <img src="assets/github-brands.svg" width="18px">
+             <a href="https://github.com/dandanzou-hust">dandanzou-hust</a>
+         </span>
+         ·
+         <span>
+             <img src="assets/rss-solid.svg" width="18px">
+             <a href="https://zoudd.online/">My Blog</a>
+         </span> -->
+     </div>
+ </center>
 
-## <img src="assets/info-circle-solid.svg" width="30px"> 个人信息
+## `<img src="assets/info-circle-solid.svg" width="30px">` 个人信息
 
 - 男，1994 年，  户籍：北京，  政治面貌：中共党员，  工作经验：2 年
 - 研究方向：AIOps异常检测及根因定位、调用链根因定位、地图匹配、智能路由等
 - 求职意向：算法工程师
 
-## <img src="./assets/graduation-cap-solid.svg" width="30px"> 教育经历
+## `<img src="assets/graduation-cap-solid.svg" width="30px">` 教育经历
 
 - 硕士，华中科技大学，光学工程，2018.9~2021.7
   荣誉/奖项：保送研究生，一等学业奖学金，知行奖学金等。
