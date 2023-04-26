@@ -5,7 +5,7 @@ commit: false
 ---
 ## 五一旅游
 
-[五一攻略](/mylife/%E4%BA%94%E4%B8%80%E6%94%BB%E7%95%A5.html)
+[五一攻略](/myblog-jekyll-TeXt-theme/mylife/%E4%BA%94%E4%B8%80%E6%94%BB%E7%95%A5.html)
 
 ## 2035年北京地铁
 
