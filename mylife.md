@@ -7,14 +7,6 @@ commit: false
 
 [五一攻略](/myblog-jekyll-TeXt-theme/mylife/%E4%BA%94%E4%B8%80%E6%94%BB%E7%95%A5.html)
 
-## 2035年北京地铁
-
-![](assets/images/2035地铁规划.jpg)
-
-## 北京圈层
-
-![](assets/images/beijing-fenbu.jpg)
-
 ## Nextcloud
 
 地址：[nextcloud](http://39.105.12.206:3380/)

@@ -1,3 +1,7 @@
+# 本地测试
+# jekyll build
+# bundle exec jekyll serve
+##############################
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -33,15 +37,15 @@ author:
   name      : 邹丹丹
   url       : /author/zoudd.html
   avatar    : /assets/images/zdd.png # path or url of avatar image (square)
-  bio       : 算法工程师 <br> 13051218520 | hustdandanzou@foxmail.com <br> 亚信科技（中国）有限公司 | PRD TI AI Lab <br> 北京市海淀区西北旺东路10号亚信大厦 100193 <br> 研究方向 <br>     - AIOps、日志异常检测、NFV <br>    - Map、地图匹配、MR定位 <br>
-  email     : hustdandanzou@foxmail.com
+  bio       : 算法工程师 <br> dandan-zou@foxmail.com <br> 京东物流 | 算法开发工程师 <br> 研究方向 <br>     - AIGC大模型方向 <br>    - 本地知识库问答、数据分析、Agent等 <br>
+  email     : dandan-zou@foxmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : meng-qi-dchui-bi # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  zhihu     : Zoudd # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
   github    : dandanzou-hust # "user_name" the last part of your profile url, e.g. https://github.com/user_name
